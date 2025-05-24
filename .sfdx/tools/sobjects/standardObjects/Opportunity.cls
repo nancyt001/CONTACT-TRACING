@@ -11,6 +11,8 @@ global class Opportunity {
     global Boolean IsDeleted;
     global Account Account;
     global Id AccountId;
+    global RecordType RecordType;
+    global Id RecordTypeId;
     global Boolean IsPrivate;
     global String Name;
     global String Description;
@@ -42,8 +44,6 @@ global class Opportunity {
     global Id LastModifiedById;
     global Datetime SystemModstamp;
     global Date LastActivityDate;
-    global Integer PushCount;
-    global Datetime LastStageChangeDate;
     global Integer FiscalQuarter;
     global Integer FiscalYear;
     global String Fiscal;
@@ -53,10 +53,14 @@ global class Opportunity {
     global Datetime LastReferencedDate;
     global Boolean HasOpenActivity;
     global Boolean HasOverdueTask;
-    global OpportunityHistory LastAmountChangedHistory;
-    global Id LastAmountChangedHistoryId;
-    global OpportunityHistory LastCloseDateChangedHistory;
-    global Id LastCloseDateChangedHistoryId;
+    global String DeliveryInstallationStatus__c;
+    global String TrackingNumber__c;
+    global String OrderNumber__c;
+    global String CurrentGenerators__c;
+    global String MainCompetitors__c;
+    global Boolean On_Hold__c;
+    global String Profile__c;
+    global String Opportunity_Source__c;
     global List<AccountPartner> AccountPartners;
     global List<ActivityHistory> ActivityHistories;
     global List<AttachedContentDocument> AttachedContentDocuments;
@@ -69,6 +73,7 @@ global class Opportunity {
     global List<EntitySubscription> FeedSubscriptionsForEntity;
     global List<Event> Events;
     global List<MessagingSession> MessagingSessions;
+    global List<NetworkActivityAudit> ParentEntities;
     global List<Note> Notes;
     global List<NoteAndAttachment> NotesAndAttachments;
     global List<OpenActivity> OpenActivities;
@@ -77,6 +82,7 @@ global class Opportunity {
     global List<OpportunityFeed> Feeds;
     global List<OpportunityFieldHistory> Histories;
     global List<OpportunityHistory> OpportunityHistories;
+    global List<OpportunityHistory__c> Opportunity_Histories__r;
     global List<OpportunityLineItem> OpportunityLineItems;
     global List<OpportunityPartner> OpportunityPartnersFrom;
     global List<OpportunityShare> Shares;
@@ -85,26 +91,26 @@ global class Opportunity {
     global List<ProcessInstanceHistory> ProcessSteps;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
-    global List<ServiceAppointment> ServiceAppointments;
-    global List<Swarm> Swarms;
-    global List<SwarmMember> SwarmMembers;
+    global List<SurveySubject> SurveySubjectEntities;
     global List<Task> Tasks;
     global List<TopicAssignment> TopicAssignments;
+    global List<dfsle__EnvelopeStatus__c> dfsle__DocuSign_Status__r;
     global List<AIInsightValue> SobjectLookupValue;
     global List<AIRecordInsight> Target;
+    global List<AgentWork> WorkItem;
     global List<ContentDistribution> RelatedRecord;
-    global List<ContentDocumentLinkChangeEvent> LinkedEntity;
     global List<ContentVersion> FirstPublishLocation;
     global List<EmailMessageChangeEvent> RelatedTo;
     global List<EventChangeEvent> What;
     global List<EventRelationChangeEvent> Relation;
     global List<FeedComment> Parent;
     global List<FlowExecutionErrorEvent> ContextRecord;
-    global List<FlowOrchestrationWorkItem> RelatedRecord;
+    global List<FlowRecordRelation> RelatedRecord;
+    global List<ForecastingFact> Opportunity;
     global List<Lead> ConvertedOpportunity;
     global List<OpportunityContactRoleChangeEvent> Opportunity;
     global List<OutgoingEmail> RelatedTo;
-    global List<ServiceAppointmentChangeEvent> ParentRecord;
+    global List<PendingServiceRouting> WorkItem;
     global List<TaskChangeEvent> What;
 
     global Opportunity () 

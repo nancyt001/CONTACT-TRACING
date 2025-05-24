@@ -10,9 +10,9 @@ declare module "@salesforce/schema/Domain.Domain" {
   const Domain:string;
   export default Domain;
 }
-declare module "@salesforce/schema/Domain.OptionsHstsPreload" {
-  const OptionsHstsPreload:boolean;
-  export default OptionsHstsPreload;
+declare module "@salesforce/schema/Domain.OptionsHstsHeaders" {
+  const OptionsHstsHeaders:boolean;
+  export default OptionsHstsHeaders;
 }
 declare module "@salesforce/schema/Domain.CnameTarget" {
   const CnameTarget:string;

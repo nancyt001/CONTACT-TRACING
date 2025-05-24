@@ -10,7 +10,7 @@ global class Domain {
     global Id Id;
     global String DomainType;
     global String Domain;
-    global Boolean OptionsHstsPreload;
+    global Boolean OptionsHstsHeaders;
     global String CnameTarget;
     global String HttpsOption;
     global Datetime CreatedDate;
@@ -21,7 +21,7 @@ global class Domain {
     global Id LastModifiedById;
     global Datetime SystemModstamp;
     global List<DomainSite> DomainSites;
-    global List<ManagedContentChannel> Domain;
+    global List<AppleDomainVerification> Parent;
 
     global Domain () 
     {

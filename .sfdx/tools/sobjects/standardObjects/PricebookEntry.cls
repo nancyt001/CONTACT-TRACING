@@ -30,7 +30,6 @@ global class PricebookEntry {
     global List<OpportunityLineItem> OpportunityLineItems;
     global List<OrderItem> OrderItems;
     global List<PricebookEntryHistory> Histories;
-    global List<ProductConsumed> ProductsConsumed;
     global List<RecordAction> RecordActions;
     global List<RecordActionHistory> RecordActionHistories;
     global List<WorkOrderLineItem> WorkOrderLineItems;

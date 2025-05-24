@@ -15,7 +15,6 @@ global class AccountHistory {
     global Id CreatedById;
     global Datetime CreatedDate;
     global String Field;
-    global String DataType;
     global Object OldValue;
     global Object NewValue;
 

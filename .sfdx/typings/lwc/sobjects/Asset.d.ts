@@ -102,14 +102,6 @@ declare module "@salesforce/schema/Asset.UsageEndDate" {
   const UsageEndDate:any;
   export default UsageEndDate;
 }
-declare module "@salesforce/schema/Asset.LifecycleStartDate" {
-  const LifecycleStartDate:any;
-  export default LifecycleStartDate;
-}
-declare module "@salesforce/schema/Asset.LifecycleEndDate" {
-  const LifecycleEndDate:any;
-  export default LifecycleEndDate;
-}
 declare module "@salesforce/schema/Asset.Status" {
   const Status:string;
   export default Status;
@@ -133,14 +125,6 @@ declare module "@salesforce/schema/Asset.Owner" {
 declare module "@salesforce/schema/Asset.OwnerId" {
   const OwnerId:any;
   export default OwnerId;
-}
-declare module "@salesforce/schema/Asset.Location" {
-  const Location:any;
-  export default Location;
-}
-declare module "@salesforce/schema/Asset.LocationId" {
-  const LocationId:any;
-  export default LocationId;
 }
 declare module "@salesforce/schema/Asset.AssetProvidedBy" {
   const AssetProvidedBy:any;
@@ -169,66 +153,6 @@ declare module "@salesforce/schema/Asset.AssetLevel" {
 declare module "@salesforce/schema/Asset.StockKeepingUnit" {
   const StockKeepingUnit:string;
   export default StockKeepingUnit;
-}
-declare module "@salesforce/schema/Asset.HasLifecycleManagement" {
-  const HasLifecycleManagement:boolean;
-  export default HasLifecycleManagement;
-}
-declare module "@salesforce/schema/Asset.CurrentMrr" {
-  const CurrentMrr:number;
-  export default CurrentMrr;
-}
-declare module "@salesforce/schema/Asset.CurrentLifecycleEndDate" {
-  const CurrentLifecycleEndDate:any;
-  export default CurrentLifecycleEndDate;
-}
-declare module "@salesforce/schema/Asset.CurrentQuantity" {
-  const CurrentQuantity:number;
-  export default CurrentQuantity;
-}
-declare module "@salesforce/schema/Asset.CurrentAmount" {
-  const CurrentAmount:number;
-  export default CurrentAmount;
-}
-declare module "@salesforce/schema/Asset.TotalLifecycleAmount" {
-  const TotalLifecycleAmount:number;
-  export default TotalLifecycleAmount;
-}
-declare module "@salesforce/schema/Asset.Street" {
-  const Street:string;
-  export default Street;
-}
-declare module "@salesforce/schema/Asset.City" {
-  const City:string;
-  export default City;
-}
-declare module "@salesforce/schema/Asset.State" {
-  const State:string;
-  export default State;
-}
-declare module "@salesforce/schema/Asset.PostalCode" {
-  const PostalCode:string;
-  export default PostalCode;
-}
-declare module "@salesforce/schema/Asset.Country" {
-  const Country:string;
-  export default Country;
-}
-declare module "@salesforce/schema/Asset.Latitude" {
-  const Latitude:number;
-  export default Latitude;
-}
-declare module "@salesforce/schema/Asset.Longitude" {
-  const Longitude:number;
-  export default Longitude;
-}
-declare module "@salesforce/schema/Asset.GeocodeAccuracy" {
-  const GeocodeAccuracy:string;
-  export default GeocodeAccuracy;
-}
-declare module "@salesforce/schema/Asset.Address" {
-  const Address:any;
-  export default Address;
 }
 declare module "@salesforce/schema/Asset.LastViewedDate" {
   const LastViewedDate:any;

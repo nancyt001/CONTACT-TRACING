@@ -178,6 +178,14 @@ declare module "@salesforce/schema/User.UserType" {
   const UserType:string;
   export default UserType;
 }
+declare module "@salesforce/schema/User.StartDay" {
+  const StartDay:string;
+  export default StartDay;
+}
+declare module "@salesforce/schema/User.EndDay" {
+  const EndDay:string;
+  export default EndDay;
+}
 declare module "@salesforce/schema/User.LanguageLocaleKey" {
   const LanguageLocaleKey:string;
   export default LanguageLocaleKey;
@@ -238,9 +246,17 @@ declare module "@salesforce/schema/User.SystemModstamp" {
   const SystemModstamp:any;
   export default SystemModstamp;
 }
+declare module "@salesforce/schema/User.PasswordExpirationDate" {
+  const PasswordExpirationDate:any;
+  export default PasswordExpirationDate;
+}
 declare module "@salesforce/schema/User.NumberOfFailedLogins" {
   const NumberOfFailedLogins:number;
   export default NumberOfFailedLogins;
+}
+declare module "@salesforce/schema/User.SuAccessExpirationDate" {
+  const SuAccessExpirationDate:any;
+  export default SuAccessExpirationDate;
 }
 declare module "@salesforce/schema/User.OfflineTrialExpirationDate" {
   const OfflineTrialExpirationDate:any;
@@ -281,6 +297,10 @@ declare module "@salesforce/schema/User.UserPermissionsSupportUser" {
 declare module "@salesforce/schema/User.UserPermissionsJigsawProspectingUser" {
   const UserPermissionsJigsawProspectingUser:boolean;
   export default UserPermissionsJigsawProspectingUser;
+}
+declare module "@salesforce/schema/User.UserPermissionsLiveAgentUser" {
+  const UserPermissionsLiveAgentUser:boolean;
+  export default UserPermissionsLiveAgentUser;
 }
 declare module "@salesforce/schema/User.UserPermissionsSiteforceContributorUser" {
   const UserPermissionsSiteforceContributorUser:boolean;
@@ -398,6 +418,10 @@ declare module "@salesforce/schema/User.UserPreferencesDisableMessageEmail" {
   const UserPreferencesDisableMessageEmail:boolean;
   export default UserPreferencesDisableMessageEmail;
 }
+declare module "@salesforce/schema/User.UserPreferencesHideLegacyRetirementModal" {
+  const UserPreferencesHideLegacyRetirementModal:boolean;
+  export default UserPreferencesHideLegacyRetirementModal;
+}
 declare module "@salesforce/schema/User.UserPreferencesJigsawListUser" {
   const UserPreferencesJigsawListUser:boolean;
   export default UserPreferencesJigsawListUser;
@@ -486,17 +510,9 @@ declare module "@salesforce/schema/User.UserPreferencesShowCountryToGuestUsers" 
   const UserPreferencesShowCountryToGuestUsers:boolean;
   export default UserPreferencesShowCountryToGuestUsers;
 }
-declare module "@salesforce/schema/User.UserPreferencesDisableFeedbackEmail" {
-  const UserPreferencesDisableFeedbackEmail:boolean;
-  export default UserPreferencesDisableFeedbackEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesDisableWorkEmail" {
-  const UserPreferencesDisableWorkEmail:boolean;
-  export default UserPreferencesDisableWorkEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesShowForecastingChangeSignals" {
-  const UserPreferencesShowForecastingChangeSignals:boolean;
-  export default UserPreferencesShowForecastingChangeSignals;
+declare module "@salesforce/schema/User.UserPreferencesPipelineViewHideHelpPopover" {
+  const UserPreferencesPipelineViewHideHelpPopover:boolean;
+  export default UserPreferencesPipelineViewHideHelpPopover;
 }
 declare module "@salesforce/schema/User.UserPreferencesHideS1BrowserUI" {
   const UserPreferencesHideS1BrowserUI:boolean;
@@ -622,33 +638,13 @@ declare module "@salesforce/schema/User.UserPreferencesNewLightningReportRunPage
   const UserPreferencesNewLightningReportRunPageEnabled:boolean;
   export default UserPreferencesNewLightningReportRunPageEnabled;
 }
-declare module "@salesforce/schema/User.UserPreferencesReverseOpenActivitiesView" {
-  const UserPreferencesReverseOpenActivitiesView:boolean;
-  export default UserPreferencesReverseOpenActivitiesView;
-}
-declare module "@salesforce/schema/User.UserPreferencesShowTerritoryTimeZoneShifts" {
-  const UserPreferencesShowTerritoryTimeZoneShifts:boolean;
-  export default UserPreferencesShowTerritoryTimeZoneShifts;
-}
-declare module "@salesforce/schema/User.UserPreferencesHasSentWarningEmail" {
-  const UserPreferencesHasSentWarningEmail:boolean;
-  export default UserPreferencesHasSentWarningEmail;
-}
-declare module "@salesforce/schema/User.UserPreferencesHasSentWarningEmail238" {
-  const UserPreferencesHasSentWarningEmail238:boolean;
-  export default UserPreferencesHasSentWarningEmail238;
-}
-declare module "@salesforce/schema/User.UserPreferencesHasSentWarningEmail240" {
-  const UserPreferencesHasSentWarningEmail240:boolean;
-  export default UserPreferencesHasSentWarningEmail240;
-}
 declare module "@salesforce/schema/User.UserPreferencesNativeEmailClient" {
   const UserPreferencesNativeEmailClient:boolean;
   export default UserPreferencesNativeEmailClient;
 }
-declare module "@salesforce/schema/User.UserPreferencesSendListEmailThroughExternalService" {
-  const UserPreferencesSendListEmailThroughExternalService:boolean;
-  export default UserPreferencesSendListEmailThroughExternalService;
+declare module "@salesforce/schema/User.IsPartner" {
+  const IsPartner:boolean;
+  export default IsPartner;
 }
 declare module "@salesforce/schema/User.Contact" {
   const Contact:any;
@@ -677,6 +673,14 @@ declare module "@salesforce/schema/User.CallCenterId" {
 declare module "@salesforce/schema/User.Extension" {
   const Extension:string;
   export default Extension;
+}
+declare module "@salesforce/schema/User.PortalRole" {
+  const PortalRole:string;
+  export default PortalRole;
+}
+declare module "@salesforce/schema/User.IsPortalEnabled" {
+  const IsPortalEnabled:boolean;
+  export default IsPortalEnabled;
 }
 declare module "@salesforce/schema/User.FederationIdentifier" {
   const FederationIdentifier:string;
@@ -749,4 +753,20 @@ declare module "@salesforce/schema/User.Individual" {
 declare module "@salesforce/schema/User.IndividualId" {
   const IndividualId:any;
   export default IndividualId;
+}
+declare module "@salesforce/schema/User.dfsle__CanManageAccount__c" {
+  const dfsle__CanManageAccount__c:boolean;
+  export default dfsle__CanManageAccount__c;
+}
+declare module "@salesforce/schema/User.dfsle__Provisioned__c" {
+  const dfsle__Provisioned__c:any;
+  export default dfsle__Provisioned__c;
+}
+declare module "@salesforce/schema/User.dfsle__Status__c" {
+  const dfsle__Status__c:string;
+  export default dfsle__Status__c;
+}
+declare module "@salesforce/schema/User.dfsle__Username__c" {
+  const dfsle__Username__c:string;
+  export default dfsle__Username__c;
 }

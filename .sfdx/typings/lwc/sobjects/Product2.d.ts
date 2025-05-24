@@ -50,10 +50,6 @@ declare module "@salesforce/schema/Product2.Family" {
   const Family:string;
   export default Family;
 }
-declare module "@salesforce/schema/Product2.IsSerialized" {
-  const IsSerialized:boolean;
-  export default IsSerialized;
-}
 declare module "@salesforce/schema/Product2.ExternalDataSource" {
   const ExternalDataSource:any;
   export default ExternalDataSource;
@@ -93,4 +89,8 @@ declare module "@salesforce/schema/Product2.LastReferencedDate" {
 declare module "@salesforce/schema/Product2.StockKeepingUnit" {
   const StockKeepingUnit:string;
   export default StockKeepingUnit;
+}
+declare module "@salesforce/schema/Product2.Status__c" {
+  const Status__c:string;
+  export default Status__c;
 }

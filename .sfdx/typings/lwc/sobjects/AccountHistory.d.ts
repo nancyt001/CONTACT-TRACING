@@ -30,10 +30,6 @@ declare module "@salesforce/schema/AccountHistory.Field" {
   const Field:string;
   export default Field;
 }
-declare module "@salesforce/schema/AccountHistory.DataType" {
-  const DataType:string;
-  export default DataType;
-}
 declare module "@salesforce/schema/AccountHistory.OldValue" {
   const OldValue:any;
   export default OldValue;

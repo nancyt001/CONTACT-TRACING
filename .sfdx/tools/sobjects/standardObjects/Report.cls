@@ -27,13 +27,13 @@ global class Report {
     global String Format;
     global Datetime LastViewedDate;
     global Datetime LastReferencedDate;
+    global String ReportTypeApiName;
     global List<AttachedContentDocument> AttachedContentDocuments;
     global List<CombinedAttachment> CombinedAttachments;
     global List<ContentDocumentLink> ContentDocumentLinks;
     global List<EntitySubscription> FeedSubscriptionsForEntity;
+    global List<NetworkActivityAudit> ParentEntities;
     global List<ReportFeed> Feeds;
-    global List<ScorecardMetric> ScorecardMetrics;
-    global List<ContentDocumentLinkChangeEvent> LinkedEntity;
     global List<ContentVersion> FirstPublishLocation;
     global List<DashboardComponent> CustomReport;
     global List<FeedComment> Parent;

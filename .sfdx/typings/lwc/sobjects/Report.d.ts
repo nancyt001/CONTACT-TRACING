@@ -78,3 +78,7 @@ declare module "@salesforce/schema/Report.LastReferencedDate" {
   const LastReferencedDate:any;
   export default LastReferencedDate;
 }
+declare module "@salesforce/schema/Report.ReportTypeApiName" {
+  const ReportTypeApiName:string;
+  export default ReportTypeApiName;
+}
